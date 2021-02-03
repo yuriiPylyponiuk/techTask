@@ -65,21 +65,21 @@ h1{
   background-size: cover;
   height: 80vh;
 }
-.sell-house-instantly-content{
+.sell-house-instantly-content, .subscribe-content{
   height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-.sell-house-instantly-content h1{
+.sell-house-instantly-content h1, .subscribe-content h1{
   margin-bottom: 40px;
   color: #fff;
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
 }
-.sell-house-instantly-content p{
+.sell-house-instantly-content p, .subscribe-content p{
   margin-bottom: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -88,26 +88,26 @@ h1{
   width: 35%;
   text-align: center;
 }
-.sell-house-instantly-form{
+.sell-house-instantly-form, .subscribe-form{
   border: 20px solid #7a3512;
   display: flex;
   width: 550px;
   height: 55px;
 }
-.sell-house-instantly-form input{
+.sell-house-instantly-form input, .subscribe-form input{
   border: none;
 }
-.sell-house-instantly-form input:focus{
+.sell-house-instantly-form input:focus, .subscribe-form input:focus{
   outline: none;
 }
-.sell-house-instantly-form input[type='text']{
+.sell-house-instantly-form input[type='text'], .subscribe-form input[type='text']{
   width: calc(100% - 165px);
   padding-left: 20px;
   font-size: 20px;
   font-weight: normal;
   line-height: 3.75;
 }
-.sell-house-instantly-form input[type='submit']{
+.sell-house-instantly-form input[type='submit'], .subscribe-form input[type='submit']{
   width: 165px;
   background-color: #f26522;
   color: #ffffff;
@@ -116,7 +116,7 @@ h1{
   cursor: pointer;
   transition: .5s;
 }
-.sell-house-instantly-form input[type='submit']:hover{
+.sell-house-instantly-form input[type='submit']:hover, .subscribe-form input[type='submit']:hover{
   background-color: #da5f26;
 }
 
@@ -144,6 +144,14 @@ h1{
   text-align: center;
   box-shadow: 0px 0px 25px rgba(64, 199, 255, .3);
   padding: 50px 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+.key-features-block:hover{
+  box-shadow: 0px 0px 25px rgba(64, 199, 255, .7);
+}
+.key-features-block:hover .key-features-block-img{
+  box-shadow: 0px 0px 25px rgba(64, 199, 255, .7);
 }
 .key-features-block-img{
   display: flex;
@@ -154,21 +162,32 @@ h1{
   border-radius: 100px;
   box-shadow: 0px 0px 7px rgba(64, 199, 255, .3);
   margin-bottom: 35px;
+  transition: .5s;
 }
-.key-features-titlle h1{
+.title h1{
   color: #333333;
   font-weight: bold;
   line-height: 0.7;
   margin-bottom: 100px;
   position: relative;
 }
-.key-features-titlle h1::after, .key-features-titlle h1::before{
+.title h1::after, .title h1::before{
   content: '';
   position: absolute;
-  bottom: -20px;
-  width: 100%;
-  background: black;
-  height: 5px;
+  bottom: -30px;
+  left: -20px;
+  width: 120%;
+  background: #cacaca;
+  height: 1px;
+}
+.title h1::before{
+  background: #f26522;
+  height: 7px;
+  bottom: -33px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;  
 }
 .key-features-block h3{
   color: #f26522;
@@ -186,3 +205,271 @@ h1{
 }
 
 
+
+
+
+
+.three-steps{
+  height: 65vh;
+  background-image: url('./image/three-steps-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+}
+.three-steps-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+.three-steps-title h1{
+  margin-bottom: 90px;
+}
+.three-steps-contebt-block{
+  width: 27%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(64, 199, 255, .3);
+  padding: 50px 20px;
+  cursor: pointer;
+  transition: .5s;
+  background-color: #ffffff;
+  min-height: 20vh;
+}
+.three-steps-contebt-block:hover{
+  box-shadow: 0px 0px 25px rgba(64, 199, 255, .7);
+}
+.three-steps-contebt-block h2{
+  font-size: 36px;
+  line-height: 1.254;
+  color: #f26522;
+  margin-bottom: 25px;
+}
+.three-steps-contebt-block h3{
+  color: #f26522;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.042;
+  margin-bottom: 5px;
+}
+
+.three-steps-contebt-block p{
+  font-size: 16px;
+  color: rgb(137, 137, 137);
+  line-height: 1.563;
+  width: 95%;
+}
+.three-steps-video{
+  position: absolute;
+  bottom: -15%;
+}
+
+
+
+
+
+/*f26522*/
+.orange-section{
+  margin-top: 150px;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+}
+.orange-section-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+.orange-section-block{
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.orange-section-block li{
+  background-color: #f26522;
+  color: #ffffff;
+  list-style: none;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  padding-left: 30px;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.orange-section-block .orange-section-checked{
+  position: relative;
+  padding-left: 60px;
+}
+.orange-section-checked::before{
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url('./image/orange-section-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.subscribe{
+  background-image: url('./image/subscribe-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  margin-top: 150px;
+}
+.subscribe-content h1{
+  margin-bottom: 0;
+}
+.subscribe-content p{
+  margin-bottom: 40px;
+}
+
+
+
+
+.form{
+  background-image: url('./image/form-background.png');
+  background-position: bottom left;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+.form-content{
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row;
+}
+.form-send-house-instantly{
+  width: 35%;
+  padding: 70px 40px 100px 40px;
+  box-shadow: 0px 0px 25px rgba(64, 199, 255, .3);
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+}
+.form-content input{
+  padding: 0 25px;
+}
+.form-send-house-instantly h1{
+  font-size: 36px;
+  font-weight: 700;
+  color: #f26522;
+  margin-bottom: 30px;
+}
+.form-send-house-instantly p{
+  color: #707070;
+  margin-bottom: 55px;
+  font-size: 20px;
+}
+.form-send-house-instantly input{
+  border: 1px solid #eff2f2;
+  box-sizing: border-box;
+  height: 60px;
+}
+.form-send-house-instantly input[type='text']{
+  width: 100%;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+.form-send-house-instantly input[type='submit']{
+  background-color: #f26522;
+  color: #ffffff;
+  font-weight: bold;
+  transition: .5s;
+  cursor: pointer;
+  width: 100%;
+}
+.form-send-house-instantly input[type='submit']:hover{
+  background-color: #da5f26;
+}
+.form-get-in-touch{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 45px 35px;
+  box-shadow: 0px 0px 25px rgba(64, 199, 255, .3);
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+}
+.form-get-in-touch h1{
+  font-weight: normal;
+  line-height: 1.2em;
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.form-get-in-touch input{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border: 1px solid #cff0ff;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.form-get-in-touch textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 250px;
+  border: 1px solid #cff0ff;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 25px;
+  color: #707070;
+}
+.form-get-in-touch label{
+  display: flex;
+  justify-content: flex-end;
+}
+.form-get-in-touch input[type='submit']{
+  background-color: #f26522;
+  color: #ffffff;
+  font-weight: bold;
+  transition: .5s;
+  cursor: pointer;
+  width: 215px;
+}
+.form-get-in-touch input[type='submit']:hover{
+  background-color: #da5f26;
+}
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+footer p{
+  color: #bdbdbd;
+  font-weight: normal;
+  font-size: 16px;
+}
