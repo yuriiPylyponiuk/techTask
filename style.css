@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+.wrap{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.head-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.head-menu-nav-ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-menu-nav-ul-items{
+  list-style: none;
+}
+.head-menu-nav-ul-items a{
+  font-size: 25px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  line-height: 1.36;
+  text-decoration: none;
+  margin: 0 25px;
+  font-weight: normal;
+  position: relative;
+  transition: .5s;
+}
+.head-menu-nav-ul-items a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0px;
+  transition: .5s;
+  background-color: #f26522;
+}
+.head-menu-nav-ul-items a:hover{
+  color: #f26522;
+}
+.head-menu-nav-ul-items a:hover::after{
+  width: 100%;
+}
+
+
+.sell-house-instantly{
+  background-image: url('./image//sell-house-instantly-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.sell-house-instantly-content{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.sell-house-instantly-content h1{
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.sell-house-instantly-content p{
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 20px;
+  width: 35%;
+  text-align: center;
+}
+.sell-house-instantly-form{
+  border: 20px solid #7a3512;
+  display: flex;
+  width: 550px;
+  height: 55px;
+}
+.sell-house-instantly-form input{
+  border: none;
+}
+.sell-house-instantly-form input:focus{
+  outline: none;
+}
+.sell-house-instantly-form input[type='text']{
+  width: calc(100% - 165px);
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 3.75;
+}
+.sell-house-instantly-form input[type='submit']{
+  width: 165px;
+  background-color: #f26522;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+.sell-house-instantly-form input[type='submit']:hover{
+  background-color: #da5f26;
+}
