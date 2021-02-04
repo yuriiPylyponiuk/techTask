@@ -824,7 +824,7 @@ footer p{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
       -ms-flex-flow: column;
-          flex-flow: column;
+        flex-flow: column;
   }
   .orange-section-block {
     width: 100%;
