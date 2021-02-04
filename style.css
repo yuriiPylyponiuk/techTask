@@ -9,6 +9,7 @@ h1{
 .wrap{
   width: 75%;
   margin: 0 auto;
+  max-width: 1550px;
 }
 
 
@@ -78,6 +79,7 @@ h1{
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
+  text-align: center;
 }
 .sell-house-instantly-content p, .subscribe-content p{
   margin-bottom: 50px;
@@ -167,7 +169,8 @@ h1{
 .title h1{
   color: #333333;
   font-weight: bold;
-  line-height: 0.7;
+  line-height: 1.2;
+  text-align: center;
   margin-bottom: 100px;
   position: relative;
 }
@@ -472,4 +475,202 @@ footer p{
   color: #bdbdbd;
   font-weight: normal;
   font-size: 16px;
+}
+
+
+
+
+.humburger{
+  display: none;
+  position: absolute;
+  right: 40px;
+}
+.humburger span{
+  height: 2px;
+  width: 30px;
+  background: #f26522;
+  display: block;
+  position: relative;
+}
+.humburger span::before, .humburger span::after{
+  content: '';
+  height: 2px;
+  width: 30px;
+  background: #f26522;
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: .5s;
+}
+.humburger span::before{
+  top: -10px;
+}
+.humburger.active span::before{
+  top: 0px;
+  transform: rotate(45deg);
+}
+.humburger span::after{
+  bottom: -10px;
+}
+.humburger.active span::after{
+  bottom: 0px;
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 1350px){
+  .wrap{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1150px){
+  .form-get-in-touch {
+    width: 45%;
+  }
+  .three-steps-video{
+    bottom: -20%;
+  }
+}
+@media screen and (max-width: 1050px){
+  .head-menu-nav-ul-items a{
+    font-size: 22px;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 875px){
+  .humburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+  .head-menu-nav{
+    display: none;
+  }
+  .humburger.active~.head-menu-nav{
+    display: block;
+  }
+  .humburger.active~.head-menu-nav .head-menu-nav-ul{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 140px;
+    background: #ffffff;
+    width: 100%;
+    align-items: center;
+  }
+  .humburger.active~.head-menu-nav .head-menu-nav-ul .head-menu-nav-ul-items{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    border-top: 1px solid #f26522;
+  }
+  .sell-house-instantly-content p, .subscribe-content p{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 790px){
+  .key-features-content{
+    flex-flow: column;
+    align-items: center;
+  }
+  .key-features-block{
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .three-steps{
+    padding: 100px 0 400px 0;
+    background-position: right;
+  }
+  .three-steps-content {
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+  .three-steps-contebt-block{
+    width: 37%;
+    margin: 15px;
+  }
+  .subscribe{
+    background-position: right;
+  }
+  .sell-house-instantly{
+    background-position: right;
+  }
+  .form-content{
+    flex-wrap: wrap;
+  }
+  .form-send-house-instantly{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .form-get-in-touch{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px){
+  .sell-house-instantly-form, .subscribe-form{
+    width: 420px;
+  }
+  .three-steps-video iframe{
+    width: 400px;
+  }
+  .three-steps{
+    padding: 100px 0 330px 0;
+  }
+  .orange-section-content{
+    flex-flow: column;
+  }
+  .orange-section-block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .three-steps-contebt-block{
+    width: 70%;
+  }
+  .three-steps{
+    padding: 100px 0;
+    height: auto;
+  }
+  .subscribe{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 465px){
+  .sell-house-instantly-form input[type='text'], .subscribe-form input[type='text']{
+    width: calc(100% - 40px);
+    font-size: 14px;
+  }
+  .sell-house-instantly-form input[type='submit'], .subscribe-form input[type='submit']{
+    width: 115px;
+    font-size: 12px;
+  }
+  .sell-house-instantly-form, .subscribe-form{
+    width: 280px;
+  }
+  .three-steps-video iframe{
+    width: 300px;
+  }
+  .head-menu-logo img{
+    width: 150px;
+  }
+  .title h1::after{
+    left: 20px;
+    width: 85%;
+  }
+  .humburger.active~.head-menu-nav .head-menu-nav-ul{
+    top: 80px;
+  }
+  .three-steps-video{
+    bottom: -15%;
+  }
+  .orange-section {
+    margin-top: 70px;
+  }
 }
